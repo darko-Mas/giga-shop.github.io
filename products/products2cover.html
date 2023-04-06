@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGA SHOP</title>
+
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+    <!--Login Form-->
+    <div class="logInForm">
+        <a href="#" onclick="closeLogIN()" >X</a>
+        <form action="" id="login">
+            <h3>Log In</h3>
+            <label for="emial">emnail</label><br><input type="email" id="email"><br>
+            <label for="password">password</label><br><input type="password" id="password" ><br>
+            <button type="button">Log In</button>
+            <p><a href="#" onclick='register()'>Register</a></p>
+        </form>
+        <form action="" id="registerin">
+            <h3>Register</h3>
+            <label for="name">name</label><br><input type="text" id="name"><br>
+            <label for="surname">surname</label><br><input type="text" id="surname" ><br>
+            <label for="emial">emnail</label><br><input type="email" id="email"><br>
+            <label for="password">password</label><br><input type="password" id="password" ><br>
+            <label for="city">City</label><br><input type="text" id="city"><br>
+            <label for="phone">phone</label><br><input type="number" id="phone"><br>
+            <label for="zipCode">ZIP</label><br><input type="text" id="zipCode"><br>
+            <button type="button" onclick="saveCustumer()">Save</button>
+            <p><a href="#" onclick="LogInOpen()">Log In</a></p>
+        </form>
+    </div>
+    <!--Login Form End-->
+    <div class="beforNavbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="beforeMessage">Free delivery for orders over 50$</p>
+                </div>
+                <div class="col-md-5">
+                    
+                </div>
+                <div class="col-md-3">
+                    <ul class="mediaNav">
+                        <li><a href="https://www.facebook.com"target="_blank" ><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram " aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.google.com/" target="_blank"><i class="fa fa-google " aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navBar navbar-fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="brand">
+                        <h2>
+                        <a href=""><img src="/img/Logo traspraent.png" alt=""></a> 
+                        </h2>
+                        <div class="menuBtn">
+                            <button type="button" onClick="openMenu()" name="menuBtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    
+                    <nav>
+                        <div class="nav-list">
+                                <div class="row">
+                                    <div class="col-md-11">
+                                        <ul class="nav forBefore">
+                                            <li class="nav-item "><a href="http://127.0.0.1:5500/index.html" class="nav-link">Home</a></li>
+                                            <li class="nav-item"><a href="http://127.0.0.1:5500/shop/shop.html" class="nav-link">Shop</a></li>
+                                            <li class="nav-item"><a href="http://127.0.0.1:5500/About%20us/aboutUs.html" class="nav-link">About us</a></li>
+                                            <li class="nav-item"><a href="" class="nav-link">Orders</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <ul class="iconsNav">
+                                            <li><i class="fa fa-user " aria-hidden="true" onclick="LogInOpen()"></i></li>
+                                            <li class="before"><a href="#" ><i class="fa fa-cart-plus " aria-hidden="true"></i></a></li>
+                                            <li><a href="" ><i class="fa fa-regular fa-heart " aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="products">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 imageBox">
+                    <img src="https://cdn.shopify.com/s/files/1/1611/4145/products/IsoWheyZero_Black_2270g_Chocolate_8l_fityegos_x500_crop_center_9e96850d-0231-438a-9d1f-b632040c473a.png?v=1646485857" alt="">
+                    <div class="galery">
+                        <img src="https://cdn.shopify.com/s/files/1/1611/4145/products/IsoWheyZero_Black_2270g_Chocolate_8l_fityegos_x500_crop_center_9e96850d-0231-438a-9d1f-b632040c473a.png?v=1646485857" alt="">
+                        <img src="data:image/jpeg;base64,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" alt="">
+                    </div>
+                </div>
+                <div class="col-md-7 descriptionBox">
+                    <div class="product-name">
+                        <h2>Biotech USA Iso Whey Zero Black</h3>
+                        <p>90% protein content
+                            With Native Whey Isolate
+                            With 3000 mg creatine per serving
+                            With 5526 mg BCAA per serving
+                            With added L-glutamine, AAKG and L-tryptophan amino acids
+                            With organic zinc for the optimal level of testosterone
+                            With added niacin, which is the precursor of NAD
+                            Sugar-*, lactose-** and gluten-free***
+                            Palm-oil free
+                            Preservative-free
+                            Fast and easy absorption
+                            
+                            *The statement refers to the water-diluted, ready for consumption drink. Sugar-free: <0,5 gr/100 ml in the ready for consumption drink.
+                            **The statement refers to the water-diluted, ready for consumption drink. Lactose-free: <0,1 gr lactose/100 ml in the ready for consumption drink.
+                            ***Gluten-free in accordance with the legislations of the European Union.</p>
+                        <h5>50$</h5>
+                        <h3>30$</h3>
+                        <div class="product-btn">
+                            <div class="quantity">                
+                                <form id='myform' method='POST' class='quantity' action='#'>
+                                    <input type='button' value='-' class='qtyminus minus' field='quantity' />
+                                    <input type='text' name='quantity' value='0' class='qty' />
+                                    <input type='button' value='+' class='qtyplus plus' field='quantity' />
+                                </form>
+                            </div>
+                            <a href="#" class="btn btn-dark">Add to card<i class="fa fa-cart-plus " aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid bacFooter">
+            <div class="row footerFirstRow">
+                <div class="col-md-4">
+                    <div class="footerText ">
+                        <img src="/img/Logo traspraent.png" alt="">
+                       <a href="./index.html"><p>
+                            Best place to shop your supplement
+                        </p></a>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                    <div class="col-md-4">
+                        <div class="footerAboutUs">
+                            <ul> <li><a href="./index.html">Home</a></li>
+                                <li><a href="./shop/shop.html">Shop</a></li>
+                                <li><a href="./About us/aboutUs.html">Abot US</a></li>
+                                <li><img src="/img/visa master.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footerContact">
+                            <h4>Contact</h4>
+                            <ul>
+                                <li><a href="">gigashop@gmail.com</a></li>
+                                <li><a href="">gigashop_hr@gmail.com</a></li>
+                            </ul>
+                            <h4></h4>
+                            <ul>
+                                <li><a href="">+8976322322</a></li>
+                                <li><a href="">+8979123122</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footerLocation">
+                            <h4>Location</h4>
+                            <ul>
+                                <li><a href="https://www.google.com/maps?ll=41.032854,21.335288&z=12&t=m&hl=en&gl=MK&mapclient=embed" target="_blank" >Bitola</a></li>
+                                <li><a href="https://www.google.com/maps?ll=41.99909,21.42489&z=10&t=m&hl=en&gl=MK&mapclient=embed&q=Skopje" target="_blank" >Skopje</a></li>
+                                <li><a href="https://www.google.com/maps/place/Ohrid/@41.113995,20.791969,13z/data=!4m5!3m4!1s0x1350db6587ea6657:0xc46cfc65390bc9d3!8m2!3d41.1230977!4d20.8016481?hl=en" target="_blank" >Ohrid</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footerMedia">
+                            <p>Follow us</p>
+                            <ul class="mediaNav">
+                                <li><a href="https://www.facebook.com"target="_blank" ><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram " aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.google.com/" target="_blank"><i class="fa fa-google " aria-hidden="true"></i></a></li>
+                           </ul>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+            </div>
+            <div class="borderCopi">
+                <p>Site design / logo © 2022 Stack Exchange Inc; user contributions licensed under CC BY-SA. rev 2022.9.23.17768</p>
+            </div>
+        </div>
+    </footer>
+   
+
+    
+
+
+
+    <script src="/script.js"></script>
+    <script src="/products/products.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>

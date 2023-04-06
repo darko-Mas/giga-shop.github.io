@@ -1,0 +1,276 @@
+
+.beforNavbar{
+    background-color: rgba(25, 25, 25, 1.04);
+}
+
+.navBar {
+    background-color:  rgba(43, 5, 59, 0.996);
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.aboutUs{
+    text-align: center;
+}
+
+
+.aboutUs h1{
+    color: lightgray;
+}
+.aboutUs p{
+    color: white;
+    text-align: center;
+}
+
+.bacBac{
+    height: 100%;
+    background-image: linear-gradient( rgb(40, 13, 51) 15%, #ffffff3a 100%);
+}
+.col-md-12{
+    margin-top: 0!important;
+}
+
+.aboutUsBac{
+    padding: 0px 0 50px 0;
+    width: 100vw;
+    height: 90vh;
+    margin: 0;
+    margin-right: 55px;
+    background-color: rgb(26, 4, 54);
+    background-image: url('https://www.bodybuilding.com/images/2017/february/team-bbcoms-favorite-supplements-header-v2-960x540.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: circle(90% at 50% -80%);
+}
+
+.aboutUsCover{
+    margin-top: 5%;
+    text-align: center;
+}
+
+.aboutUsCover img{
+    height: 200px;
+    width: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.imgWithPath{
+    clear: both;
+    background-image: url('https://media.istockphoto.com/photos/well-guide-you-through-your-fitness-journey-picture-id1310060458?k=20&m=1310060458&s=612x612&w=0&h=ZEGzB7OAr5yfTH4mdkBVIqUOH9OUW9e1QF5ySgor24M=');
+    height: 100px;
+    width: 100px;
+    margin: 20px 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    clip-path: circle(50% at 50% 50%);
+
+}
+.imgWithPath2{
+    clear: both;
+    background-image: url('https://i.pinimg.com/originals/a7/e3/7e/a7e37ea440ae1bf90729e679ede5e940.jpg');
+    height: 100px;
+    width: 100px;
+    margin: 20px 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    clip-path: circle(50% at 50% 50%);
+
+}
+
+.aboutCard p{
+    color: #252525;
+    padding: 0 10px;
+}
+
+.aboutCard h2{
+    margin: 40px 10px 20px 0px;
+    float: right;
+    display: block;
+    position: relative;
+    left: -70px;
+    text-transform: uppercase;
+}
+
+/*find us*/
+
+
+.findUsHead{
+    text-align: left;
+    padding: 100px 15px 50px 15px!important;
+}
+
+.findUsHead h2{
+    color: #252525;
+    margin-left: 25% ;
+    margin-top: 20px;
+}
+
+.findUsHead a{
+    color: #252525;
+}
+
+.findUsHead p{
+    width: 60%;
+    margin: 30px 0;
+    margin-left: 5%;
+    display: inline-block;
+    color: #252525;
+}
+
+.findUsHead img{
+    float: right;
+    height: 180px;
+    width: 200px;
+    margin: 0;
+    position: relative;
+    top: -50px;
+    left: -50px;
+}
+
+.findLocation{
+    height: 100%;
+    margin-bottom: 50px;
+
+}
+
+.findLocation .first{
+   border-radius: 25% 75%;
+}
+
+.findLocation .second{
+    border-radius: 45%;
+}
+
+.findLocation .third{
+   border-radius: 75% 25%;
+}
+
+.headMap h2{
+    display: inline-block;
+
+}
+.headMap img{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    margin-bottom: 14px;
+    margin-left: 20px;
+}
+.contactUsBac{
+    background-image: url('https://www.baseoutsourcing.com/wp-content/uploads/2020/05/contactusheader.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contactUs{
+    color:  lightgray;
+    padding:50px 10%;
+    clear: both;
+    background-color: rgba(40, 13, 51, 0.593);
+}
+
+.contactUsHead{
+    float: right;
+}
+.contactUsHead p{
+    color:  lightgray;
+}
+.contactUs h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.contactUs ul{
+    list-style: none;
+    height: 200px;
+    text-align: left;
+    border-left: 1px solid lightgrey;
+}
+
+.contactUs ul li a{
+    text-decoration: none;
+    color:  lightgray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    .navBar{
+        position: fixed;
+        z-index: 3333;
+        top: 0;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        background-color: rgba(15, 15, 15, 0.994)!important;
+        width: 91%;
+        right: 0%;
+    }
+    .aboutUsBac{
+        display: block;
+        clip-path: none;
+        height: 70vh;
+        padding-bottom: 0;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        width: 100vw;
+        position: relative;
+        right: -12px;
+    }
+    .aboutUsCover{
+        margin-top: 100px;
+        padding-top: 20px;
+    }
+    .aboutCard h2{
+        top: 10px;
+        left: -20px;
+    }
+
+    .findUsHead img{
+        float: left;    
+        top: 0px;
+        left: 25%;
+    }
+
+    .findUsHead p{
+        text-align: center;
+        margin-left: 24%;
+    }
+    
+}

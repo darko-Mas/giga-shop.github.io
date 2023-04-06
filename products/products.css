@@ -1,0 +1,124 @@
+.beforNavbar{
+    background-color: rgba(25, 25, 25, 1);
+}
+
+.navBar {
+    background-color: rgba(25, 25, 25)!important;
+}
+
+.products{
+    margin: 50px 0;
+    
+}
+
+.imageBox img{
+    padding: 20px;
+    height: 400px;
+    width: 400px;
+}
+
+.galery{
+    display: block;
+    width: 500px;
+
+}
+.imageBox .galery img{
+    height: 150px;
+    width: 150px;
+}
+
+.product-name{
+    padding: 20px;
+}
+
+.product-name h2, .product-name h5{
+    margin-top: 10px;
+    color: #311031;
+    text-transform: uppercase;
+}
+.product-name h5{
+    text-decoration: line-through;
+    color: rgb(151, 1, 1);
+}
+.product-name h3{
+    color: rgb(1, 151, 21);
+}
+.product-name p{
+    margin-top: 10px;
+    color: #311031;
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.product-name a{
+    font-size: 24px;
+    font-weight: 300;
+    margin-left: 10px;
+    height: 50px;
+    border-radius: 3px;
+}
+
+.product-name i{
+    margin-left: 10px;
+}
+
+.quantity{
+    position: relative;
+    top: 1.5px;
+}
+
+.product-btn{
+    margin-top: 20px;
+}
+.product-btn div{
+    display: inline-block;
+}
+
+#myform {
+    text-align: left;
+   
+}
+.qty {
+    
+    width:95px;
+    height:50px;
+    background-color: #f1f1f1;
+    color: rgb(29, 29, 29);
+    border: none;
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+}
+input.qtyplus {
+    width:50px;
+    height:50px;
+    background-color: #252525;
+    color: rgb(240, 240, 240);
+    border: none;
+    margin: 0;
+    font-size: 18px;
+    border-radius: 3px;
+}
+input.qtyminus {
+    width:50px;
+    height:50px;
+    background-color: #252525;
+    color: rgb(240, 240, 240);
+    border: none;
+    margin: 0;
+    font-size: 18px;
+    border-radius: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

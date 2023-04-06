@@ -1,0 +1,67 @@
+.logInForm{
+    display: block;
+    background-color: white;
+    height: 100%;
+}
+.logInForm img{
+    height: 100px;
+    margin: 0;
+    padding: 0;
+}
+.backLogo {
+    width: 100%;
+    background-color: rgb(87, 87, 87);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.767);
+}
+.text-purple{
+    color:  rgb(26, 4, 54);
+}
+
+.beforNavbar{
+    background-color: rgba(25, 25, 25, 1);
+}
+
+.navBar {
+    background-color: rgba(25, 25, 25)!important;
+}
+
+.orders{
+    height: 100Vh;
+    padding: 50px 0;
+}
+
+.table{
+    margin-top: 20px;
+}
+
+.ordesrsApp{
+    display: none;
+}
+
+.addnewMember{
+    width: 70%;
+    margin: auto;
+    display: none;
+
+}
+#addNewMember{
+    width: 100%;
+    margin: 30px auto;
+}
+
+#addNewMember button{
+    width: 100%;
+}
+
+.addNewProducts{
+    display: none;
+    width: 50%;
+    margin: auto;
+}
+
+.addNewProducts select {
+    margin: 0!important;
+    padding: 10px!important;
+
+}

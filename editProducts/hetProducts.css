@@ -1,0 +1,18 @@
+.addNewProducts{
+    height: 100%;
+    padding: 50px;
+}
+
+.addNewProducts input{
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+}
+.addNewProducts button{
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+
+}

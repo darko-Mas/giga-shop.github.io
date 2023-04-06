@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGA SHOP</title>
+
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/editProducts/hetProducts.css">
+    <link rel="stylesheet" href="/shop/shop.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+    <!--Login Form-->
+    <div class="logInForm">
+        <form action="">
+            <h3>Log In</h3>
+            <label for="usernmae">username</label><br><input type="text" id="usernmae"><br>
+            <label for="password">password</label><br><input type="password" id="password" ><br>
+            <button type="button">Log In</button>
+            <p><a href="">Register</a></p>
+        </form>
+    </div>
+    <!--Login Form End-->
+    <div class="beforNavbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="beforeMessage">Free delivery for orders over 50$</p>
+                </div>
+                <div class="col-md-5">
+                    
+                </div>
+                <div class="col-md-3">
+                    <ul class="mediaNav">
+                        <li><a href="" ><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+                        <li><a href="" ><i class="fa fa-instagram " aria-hidden="true"></i></a></li>
+                        <li><a href="" ><i class="fa fa-google " aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navBar navbar-fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="brand">
+                        <h2>
+                        <a href="http://127.0.0.1:5500/index.html"><img src="/img/Logo traspraent.png" alt=""></a> 
+                        </h2>
+                        <div class="menuBtn">
+                            <button type="button" onClick="openMenu()" name="menuBtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    
+                    <nav>
+                        <div class="nav-list">
+                                <div class="row">
+                                    <div class="col-md-11">
+                                        <ul class="nav forBefore">
+                                            <li class="nav-item "><a href="http://127.0.0.1:5500/index.html" class="nav-link">Home</a></li>
+                                            <li class="nav-item before"><a href="" class="nav-link">Shop</a></li>
+                                            <li class="nav-item"><a href="" class="nav-link">About us</a></li>
+                                            <li class="nav-item"><a href="" class="nav-link">Orders</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <ul class="iconsNav">
+                                            <li><i class="fa fa-user " aria-hidden="true" onclick="LogInOpen()"></i></li>
+                                            <li><a href="http://127.0.0.1:5500/orders/oreders.html" ><i class="fa fa-cart-plus " aria-hidden="true"></i></a></li>
+                                            <li><a href="" ><i class="fa fa-regular fa-heart " aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>  
+    
+    <div class="addNewProducts">
+       
+        <input type="numbere" id="userId" placeholder="vnsi id">
+        <input type="text" id="categoi" placeholder="vnsi kategorija">
+        <input type="text" id="productName" placeholder="vnsi ime">
+        <input type="text" id="description" placeholder="vnsi opis">
+        <input type="numbere" id="quantiti" placeholder="vnsi kolicina">
+        <input type="numbere" id="price" placeholder="vnsi cena">
+        <input type="text" id="img" placeholder="vnsi link od slika">
+
+        <button id="fetchBtn" onclick="addNew()">Ucitaj</button>
+
+        <div id="podatci">
+            
+        </div>
+    </div>
+  
+    <footer>
+        <div class="container-fluid bacFooter">
+            <div class="row footerFirstRow">
+                <div class="col-md-4">
+                    <div class="footerText ">
+                        <h3>Somthing foor us</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Aut architecto animi, iusto a laudantium, distinctio excepturi 
+                             voluptatum eos explicabo, quibusdam commodi nemo.
+                             Accusantium rem architecto deleniti. Et, perspiciatis tempora. Quo?</p>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                    <div class="col-md-4">
+                        <div class="footerAboutUs">
+                            <ul>
+                                <li><a href="">lorem</a></li>
+                                <li><a href="">lorem</a></li>
+                                <li><a href="">lorem</a></li>
+                                <li><a href="">lorem</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footerContact">
+                            <h4>Contact</h4>
+                            <ul>
+                                <li><a href="">gigashop@gmail.com</a></li>
+                                <li><a href="">gigashop_hr@gmail.com</a></li>
+                            </ul>
+                            <h4></h4>
+                            <ul>
+                                <li><a href="">+8976322322</a></li>
+                                <li><a href="">+8979123122</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footerLocation">
+                            <h4>Location</h4>
+                            <ul>
+                                <li><a href="">Skopje</a></li>
+                                <li><a href="">Bitola</a></li>
+                                <li><a href="">Ohrid</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footerMedia">
+                            <p>Follow us</p>
+                            <ul class="mediaNav">
+                                <li><a href="" ><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+                                <li><a href="" ><i class="fa fa-instagram " aria-hidden="true"></i></a></li>
+                                <li><a href="" ><i class="fa fa-google " aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+            </div>
+            <div class="borderCopi">
+                <p>Site design / logo © 2022 Stack Exchange Inc; user contributions licensed under CC BY-SA. rev 2022.9.23.17768</p>
+            </div>
+        </div>
+    </footer>
+   
+
+
+
+
+    <script src="/script.js"></script>
+    <script src="/editProducts/setProdClass.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+.beforNavbar{
+    background-color: rgba(25, 25, 25, 1);
+}
+
+.navBar {
+    background-color: rgba(25, 25, 25)!important;
+}
+
+.bacBack{
+    background-image: url('https://img.freepik.com/premium-photo/top-view-whey-protein-scoop-dark-copy_124437-398.jpg?w=2000');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+}
+.bacBackPancake{
+    background-image: url('https://blogscdn.thehut.net/app/uploads/sites/478/2019/02/Protein-Pancakes-HERO-9_1577795135.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+}
+
+.bacBackCardio{
+    background-image: url('https://c1.wallpaperflare.com/preview/100/516/970/runner-fitness-running-ship.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+}
+
+.firstINprotien {
+    padding: 10% 0;
+}
+
+.firstINprotien img{
+    height: 400px;
+}
+
+.secondInprotien{
+    padding: 10% 0;
+}
+
+.secondInprotien img{
+    height: 400px;
+}
+
+.thirdInprotien{
+    padding: 10% 0;
+}
+
+.thirdInprotien img{
+    height: 400px;
+}
+
+.firsInPancake{
+    padding: 10% 0;
+}
+
+.firsInPancake img{
+    height: 400px;
+    width: 400px;
+}
+
+.secondInpanecakes{
+    padding: 10% 0;
+}
+
+.secondInpanecakes img{
+    height: 400px;
+}
+
+.thirdInpanecakes{
+    padding: 10% 0;
+}
+
+.thirdInpanecakes img{
+    height: 400px;
+}
+

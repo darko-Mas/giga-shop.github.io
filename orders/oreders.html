@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGA SHOP</title>
+
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/editProducts/hetProducts.css">
+    <link rel="stylesheet" href="orders.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+    <!--Login Form-->
+    <div class="logInForm">
+        <form action="" id="login">
+            <div class="backLogo mb-5 text-purple pb-1 border-bottom border-light">
+                <img src="../img/Logo traspraent.png" class="" alt=""><br>
+            </div>
+            <label class="h4 text-secondary" for="emial">Email</label><br><input type="text" placeholder="Email" class="form-control" id="emailtext"><br>
+            <label class="h4 text-secondary" for="password">Password</label><br><input class="mb-1 form-control" placeholder="Password" type="password" id="passtext" ><br>
+            <button type="button" class="btn btn-dark" onclick='LogIn()'>Log In</button>
+        </form>
+    </div>
+    <!--Login Form End-->
+    <div class="beforNavbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="beforeMessage">Free delivery for orders over 50$</p>
+                </div>
+                <div class="col-md-5">
+                    
+                </div>
+                <div class="col-md-3">
+                    <ul class="mediaNav">
+                        <li><a href="https://www.facebook.com"target="_blank" ><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram " aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.google.com/" target="_blank"><i class="fa fa-google " aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navBar navbar-fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="brand">
+                        <h2>
+                        <a href=""><img src="/img/Logo traspraent.png" alt=""></a> 
+                        </h2>
+                        <div class="menuBtn">
+                            <button type="button" onClick="openMenu()" name="menuBtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    
+                    <nav>
+                        <div class="nav-list">
+                                <div class="row">
+                                    <div class="col-md-11">
+                                        <ul class="nav forBefore">
+                                            <li class="nav-item "><a href="http://127.0.0.1:5500/index.html" class="nav-link">Home</a></li>
+                                            <li class="nav-item"><a href="http://127.0.0.1:5500/shop/shop.html" class="nav-link">Shop</a></li>
+                                            <li class="nav-item"><a href="http://127.0.0.1:5500/About%20us/aboutUs.html" class="nav-link">About us</a></li>
+                                            <li class="nav-item"><a href="" class="nav-link">Orders</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <ul class="iconsNav">
+                                            <li><i class="fa fa-user " aria-hidden="true" onclick="LogInOpen()"></i></li>
+                                            <li class="before"><a href="#" ><i class="fa fa-cart-plus " aria-hidden="true"></i></a></li>
+                                            <li><a href="" ><i class="fa fa-regular fa-heart " aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="ordesrsApp">
+        <div class="myApp">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                <a class="nav-link active" name="orders" onclick="changePage(event)" aria-current="page" href="#">Orders</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link " name="member" onclick="changePage(event)" href="#">Add new membe</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" name="product" onclick="changePage(event)" href="#">Add New Product</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="orders">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Product</th>
+                                <th scope="col">User</th>
+                                <th scope="col">Pieces </th>
+                                <th scope="col">Price for piece</th>
+                                <th scope="col">Total Price</th>
+                                <th scope="col">sent</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Dymatize ISO 100 WHEY</td>
+                                <td>Petar Petrevski</td>
+                                <td>1</td>
+                                <td>$65</td>
+                                <td>$65</td>
+                                <td>
+                                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>GOLD STANDARD 100% WHEY</td>
+                                <td>Nikola Nikolovski</td>
+                                <td>2</td>
+                                <td>$79</td>
+                                <td>$158</td>
+                                <td>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td >MUSCLETECH NITRO-TECH 100%</td>
+                                <td>Aleksandar Aleksovski</td>
+                                <td >1</td>
+                                <td>$29</td>
+                                <td>$29</td>
+                                <td>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row" id="orders" name="orders">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="addNewProducts">
+            <h1>Add new Product</h1>
+            <div class="form-floating mb-3">
+                <!--<input type="text" class="form-control" id="categoi" placeholder="Category"> 
+                    <label for="categoi">Category</label>-->
+                <select name="Category" class="form-control" id="categoi" >
+                    <option value="All">Select Category </option>
+                    <option value="Amino">Amino</option>
+                    <option value="Protein">Protein</option>
+                    <option value="Gejner">Gejner</option>
+                    <option value="BCA">BCA</option>
+                </select>
+            
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="productName" placeholder="Product Name">
+                <label for="productName">Product Name</label>
+            </div>
+            <div class="form-floating mb-3">
+                <textarea type="text" class="form-control" id="description" aria-label="With textarea" placeholder="Description"></textarea>
+                <label for="description">Description</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="quantiti" placeholder="Qnt">
+                <label for="quantiti">Quantiti</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="price" placeholder="Price">
+                <label for="price">Price</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="img" placeholder="Add photo">
+                <label for="img">Add photo</label>
+            </div>
+        
+            <!--
+                
+            <textarea type="text" class="form-control" id="description" aria-label="With textarea" placeholder="Description"></textarea>
+            
+            <input type="numbere" id="userId" placeholder="vnsi id">
+            <input type="text" id="categoi" placeholder="vnsi kategorija">
+            <label for="productName">Product Name</label>
+            <input type="text" class="form-control"  id="productName" placeholder="vnsi ime">
+            <input type="text" id="description" placeholder="vnsi opis">
+            <input type="numbere" id="quantiti" placeholder="vnsi kolicina">
+            <input type="numbere" id="price" placeholder="vnsi cena">
+            <input type="text" id="img" placeholder="vnsi link od slika">
+            -->
+            <button id="fetchBtn" class="btn btn-dark" onclick="addNew()">Ucitaj</button>
+        </div>
+
+        <div class="addnewMember">
+            <form action="" id="addNewMember">
+                <h3>Register</h3>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="name" placeholder="Name">
+                    <label for="name">Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="surname" placeholder="Surname">
+                    <label for="surname">Surame</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="email">
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                    <label for="password">Password</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="gender" placeholder="city">
+                    <label for="gender">Gender</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="phone" placeholder="phone">
+                    <label for="phone">Phone</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="zipCode" placeholder="ZIP">
+                    <label for="zipCode">ZIP</label>
+                </div>
+
+            <!-- <label for="name">name</label><br><input type="text" id="name"><br>
+                <label for="surname">surname</label><br><input type="text" id="surname" ><br>
+                <label for="emial">emnail</label><br><input type="email" id="email"><br>
+                <label for="password">password</label><br><input type="password" id="password" ><br>
+                <label for="city">City</label><br><input type="text" id="city"><br>
+                <label for="phone">phone</label><br><input type="number" id="phone"><br>
+                <label for="zipCode">ZIP</label><br><input type="text" id="zipCode"><br>-->
+                <button type="button" class="btn btn-dark" onclick="saveCustumer()">Save</button>
+                <p><a href="#"  onclick="LogInOpen()">Log In</a></p>
+            </form>
+        </div>
+    </div>
+    
+    
+
+
+    <footer>
+        <div class="container-fluid bacFooter">
+            <div class="row footerFirstRow">
+                <div class="col-md-4">
+                    <div class="footerText ">     
+                        <img src="/img/Logo traspraent.png" alt="">
+                       <a href="./index.html"><p>
+                            Best place to shop your supplement
+                        </p></a>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                    <div class="col-md-4">
+                        <div class="footerAboutUs">
+                            <ul>
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="./shop/shop.html">Shop</a></li>
+                                <li><a href="./About us/aboutUs.html">Abot US</a></li>
+                                <li><img src="../img/visa master.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footerContact">
+                            <h4>Contact</h4>
+                            <ul>
+                                <li><a href="">gigashop@gmail.com</a></li>
+                                <li><a href="">gigashop_hr@gmail.com</a></li>
+                            </ul>
+                            <h4></h4>
+                            <ul>
+                                <li><a href="">+8976322322</a></li>
+                                <li><a href="">+8979123122</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footerLocation">
+                            <h4>Location</h4>
+                            <ul>
+                                <li><a href="https://www.google.com/maps?ll=41.032854,21.335288&z=12&t=m&hl=en&gl=MK&mapclient=embed" target="_blank" >Bitola</a></li>
+                                <li><a href="https://www.google.com/maps?ll=41.99909,21.42489&z=10&t=m&hl=en&gl=MK&mapclient=embed&q=Skopje" target="_blank" >Skopje</a></li>
+                                <li><a href="https://www.google.com/maps/place/Ohrid/@41.113995,20.791969,13z/data=!4m5!3m4!1s0x1350db6587ea6657:0xc46cfc65390bc9d3!8m2!3d41.1230977!4d20.8016481?hl=en" target="_blank" >Ohrid</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footerMedia">
+                            <p>Follow us</p>
+                            <ul class="mediaNav">
+                                <li><a href="https://www.facebook.com"target="_blank" ><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram " aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.google.com/" target="_blank"><i class="fa fa-google " aria-hidden="true"></i></a></li>
+                           </ul>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+            </div>
+            <div class="borderCopi">
+                <p>Site design / logo © 2022 Stack Exchange Inc; user contributions licensed under CC BY-SA. rev 2022.9.23.17768</p>
+            </div>
+        </div>
+    </footer>
+   
+
+    
+
+
+
+    <script src="/script.js"></script>
+    <script src="/orders/oreders.js"></script>
+    <script src="/editProducts/setProdClass.js"></script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>

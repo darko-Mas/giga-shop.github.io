@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGA SHOP</title>
+
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+    <!--Login Form-->
+    <div class="logInForm">
+        <a href="#" onclick="closeLogIN()" >X</a>
+        <form action="" id="login">
+            <h3>Log In</h3>
+            <label for="emial">emnail</label><br><input type="email" id="email"><br>
+            <label for="password">password</label><br><input type="password" id="password" ><br>
+            <button type="button">Log In</button>
+            <p><a href="#" onclick='register()'>Register</a></p>
+        </form>
+        <form action="" id="registerin">
+            <h3>Register</h3>
+            <label for="name">name</label><br><input type="text" id="name"><br>
+            <label for="surname">surname</label><br><input type="text" id="surname" ><br>
+            <label for="emial">emnail</label><br><input type="email" id="email"><br>
+            <label for="password">password</label><br><input type="password" id="password" ><br>
+            <label for="city">City</label><br><input type="text" id="city"><br>
+            <label for="phone">phone</label><br><input type="number" id="phone"><br>
+            <label for="zipCode">ZIP</label><br><input type="text" id="zipCode"><br>
+            <button type="button" onclick="saveCustumer()">Save</button>
+            <p><a href="#" onclick="LogInOpen()">Log In</a></p>
+        </form>
+    </div>
+    <!--Login Form End-->
+    <div class="beforNavbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="beforeMessage">Free delivery for orders over 50$</p>
+                </div>
+                <div class="col-md-5">
+                    
+                </div>
+                <div class="col-md-3">
+                    <ul class="mediaNav">
+                        <li><a href="https://www.facebook.com"target="_blank" ><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram " aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.google.com/" target="_blank"><i class="fa fa-google " aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navBar navbar-fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="brand">
+                        <h2>
+                        <a href=""><img src="/img/Logo traspraent.png" alt=""></a> 
+                        </h2>
+                        <div class="menuBtn">
+                            <button type="button" onClick="openMenu()" name="menuBtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    
+                    <nav>
+                        <div class="nav-list">
+                                <div class="row">
+                                    <div class="col-md-11">
+                                        <ul class="nav forBefore">
+                                            <li class="nav-item "><a href="http://127.0.0.1:5500/index.html" class="nav-link">Home</a></li>
+                                            <li class="nav-item"><a href="http://127.0.0.1:5500/shop/shop.html" class="nav-link">Shop</a></li>
+                                            <li class="nav-item"><a href="http://127.0.0.1:5500/About%20us/aboutUs.html" class="nav-link">About us</a></li>
+                                            <li class="nav-item"><a href="" class="nav-link">Orders</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <ul class="iconsNav">
+                                            <li><i class="fa fa-user " aria-hidden="true" onclick="LogInOpen()"></i></li>
+                                            <li class="before"><a href="#" ><i class="fa fa-cart-plus " aria-hidden="true"></i></a></li>
+                                            <li><a href="" ><i class="fa fa-regular fa-heart " aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="products">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 imageBox">
+                    <img src="https://s7.vitaminshoppe.com/is/image/VitaminShoppe/2099356_01?$OP_PDPZOOM$" alt="">
+                    <div class="galery">
+                        <img src="https://s7.vitaminshoppe.com/is/image/VitaminShoppe/2099356_01?$OP_PDPZOOM$" alt="">
+                        <img src="http://cdn.shopify.com/s/files/1/0451/5873/products/on_amino_energy_label_1200x1200.jpg?v=1598050782" alt="">
+                    </div>
+                </div>
+                <div class="col-md-7 descriptionBox">
+                    <div class="product-name">
+                        <h2>Optimum Nutrition Amino Energy</h3>
+                        <p>Mix up ESSENTIAL AMINO ENERGY™ anytime you want a fruit flavored or coffeehouse inspired boost of energy and alertness. You can determine what's appropriate for any situation, adding a 2-scoop serving to water for an afternoon pick-me-up or increasing the amino acid matrix to 10 grams with a 4-scoop pre-workout drink that delivers 200 mg of caffeine from green coffee and green tea extracts.
+
+                            Essential Amino Acid Delivery
+                            Muscle Recovery
+                            Energy and Focus
+                        </p>    
+                        <h5>50$</h5>
+                        <h3>30$</h3>
+                        <div class="product-btn">
+                            <div class="quantity">                
+                                <form id='myform' method='POST' class='quantity' action='#'>
+                                    <input type='button' value='-' class='qtyminus minus' field='quantity' />
+                                    <input type='text' name='quantity' value='0' class='qty' />
+                                    <input type='button' value='+' class='qtyplus plus' field='quantity' />
+                                </form>
+                            </div>
+                            <a href="#" class="btn btn-dark">Add to card<i class="fa fa-cart-plus " aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid bacFooter">
+            <div class="row footerFirstRow">
+                <div class="col-md-4">
+                    <div class="footerText ">
+                        <img src="/img/Logo traspraent.png" alt="">
+                       <a href="./index.html"><p>
+                            Best place to shop your supplement
+                        </p></a>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                    <div class="col-md-4">
+                        <div class="footerAboutUs">
+                            <ul> <li><a href="./index.html">Home</a></li>
+                                <li><a href="./shop/shop.html">Shop</a></li>
+                                <li><a href="./About us/aboutUs.html">Abot US</a></li>
+                                <li><img src="/img/visa master.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footerContact">
+                            <h4>Contact</h4>
+                            <ul>
+                                <li><a href="">gigashop@gmail.com</a></li>
+                                <li><a href="">gigashop_hr@gmail.com</a></li>
+                            </ul>
+                            <h4></h4>
+                            <ul>
+                                <li><a href="">+8976322322</a></li>
+                                <li><a href="">+8979123122</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footerLocation">
+                            <h4>Location</h4>
+                            <ul>
+                                <li><a href="https://www.google.com/maps?ll=41.032854,21.335288&z=12&t=m&hl=en&gl=MK&mapclient=embed" target="_blank" >Bitola</a></li>
+                                <li><a href="https://www.google.com/maps?ll=41.99909,21.42489&z=10&t=m&hl=en&gl=MK&mapclient=embed&q=Skopje" target="_blank" >Skopje</a></li>
+                                <li><a href="https://www.google.com/maps/place/Ohrid/@41.113995,20.791969,13z/data=!4m5!3m4!1s0x1350db6587ea6657:0xc46cfc65390bc9d3!8m2!3d41.1230977!4d20.8016481?hl=en" target="_blank" >Ohrid</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footerMedia">
+                            <p>Follow us</p>
+                            <ul class="mediaNav">
+                                <li><a href="https://www.facebook.com"target="_blank" ><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram " aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.google.com/" target="_blank"><i class="fa fa-google " aria-hidden="true"></i></a></li>
+                           </ul>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+            </div>
+            <div class="borderCopi">
+                <p>Site design / logo © 2022 Stack Exchange Inc; user contributions licensed under CC BY-SA. rev 2022.9.23.17768</p>
+            </div>
+        </div>
+    </footer>
+   
+
+    
+
+
+
+    <script src="/script.js"></script>
+    <script src="/products/products.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
