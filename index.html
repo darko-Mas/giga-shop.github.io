@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGA SHOP</title>
+
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+
+</head>
+<body>
+    <!--Login Form-->
+    <div class="logInForm">
+        <a href="#" onclick="closeLogIN()" >X</a>
+        <form action="" id="login">
+            <h3>Log In</h3>
+            <label for="text">emnail</label><br><input type="text" id="emailtext"><br>
+            <label for="text">password</label><br><input type="text" id="passtext" ><br>
+            <button type="button"  onclick="LogIn()">Log In</button>
+            <p><a href="#" onclick='register()'>Register</a></p>
+        </form>
+        <form action="" id="registerin">
+            <h3>Register</h3>
+            <label for="name">name</label><br><input type="text" id="name"><br>
+            <label for="surname">surname</label><br><input type="text" id="surname" ><br>
+            <label for="email">emnail</label><br><input type="text" id="email"><br>
+            <label for="password">password</label><br><input type="text" id="password" ><br>
+            <label for="gender">Gender</label><br><input type="text" id="gender"><br>
+            <label for="adress">Adress</label><br><input type="text" id="adress"><br>
+            <label for="phone">phone</label><br><input type="number" id="phone"><br>
+            <button type="button" onclick="saveCustumer()">Save</button>
+            <p><a href="#" onclick="LogInOpen()">Log In</a></p>
+        </form>
+    </div>
+    <!--Login Form End-->
+    <div class="beforNavbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="beforeMessage">Free delivery for orders over 50$</p>
+                </div>
+                <div class="col-md-5">
+                    
+                </div>
+                <div class="col-md-3">
+                    <ul class="mediaNav">
+                        <li><a href="https://www.facebook.com"target="_blank" ><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram " aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.google.com/" target="_blank"><i class="fa fa-google " aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navBar navbar-fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="brand">
+                        <h2>
+                            <a href=""><img src="/img/Logo traspraent.png" alt=""></a> 
+                        </h2>
+                        <div class="menuBtn">
+                            <button type="button" onClick="openMenu()" name="menuBtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    
+                    <nav>
+                        <div class="nav-list">
+                                <div class="row">
+                                    <div class="col-md-11">
+                                        <ul class="nav forBefore">
+                                            <li class="nav-item before"><a href="" class="nav-link">Home</a></li>
+                                            <li class="nav-item"><a href="http://127.0.0.1:5500/shop/shop.html" class="nav-link">Shop</a></li>
+                                            <li class="nav-item"><a href="http://127.0.0.1:5500/About%20us/aboutUs.html" class="nav-link">About us</a></li>
+                                            <!--<li class="nav-item"><a href="http://127.0.0.1:5500/orders/oreders.html#" class="nav-link" id="menageOrdes">Orders</a></li>-->
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <ul class="iconsNav">
+                                            <li><a href="http://127.0.0.1:5500/orders/oreders.html"><i class="fa fa-user " aria-hidden="true"></i></a></li>
+                                            <li><a href="http://127.0.0.1:5500/shop/shop.html" ><i class="fa fa-cart-plus " aria-hidden="true"></i></a></li>
+                                            <li disabled><a href="" disabled ><i class="fa fa-regular fa-heart " disabled aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="homePage container-fluid">
+        <div class="firstPage" >
+            <div class="logoSection ">
+                <a href=""><img src="/img/Screenshot (24)-fococlipping-standard.png" alt=""></a>
+                <h2>Best place to shop your supplement</h2>
+            </div>
+            <div class="imgSection" >
+               <!-- <img src="https://content.optimumnutrition.com/i/on/on-gold-standard-100-whey-protein_Image_01?PDP_THUMB_003$&fmt=auto&locale=en-us,en-gb,*&img404=no-product-image&v=1" alt="">
+            
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://content.optimumnutrition.com/i/on/on-gold-standard-100-whey-protein_Image_01?PDP_THUMB_003$&fmt=auto&locale=en-us,en-gb,*&img404=no-product-image&v=1" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://cdn.shopify.com/s/files/1/1611/4145/products/IsoWheyZero_Black_2270g_Chocolate_8l_fityegos_x500_crop_center_9e96850d-0231-438a-9d1f-b632040c473a.png?v=1646485857" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://nolimit.mk/wp-content/uploads/2018/02/ISO100Hydro_2200g_GourmetVanilla_shadow03_600x600.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>-->
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://content.optimumnutrition.com/i/on/on-gold-standard-100-whey-protein_Image_01?PDP_THUMB_003$&fmt=auto&locale=en-us,en-gb,*&img404=no-product-image&v=1" class="" alt="...">
+                    <div class="slider-text">
+                        <h3>Gold Standar</h3>
+                        <a href="http://127.0.0.1:5500/products/products1Cover.html" class="btn btn-dark" target="_blank">shop now</a>
+                    </div>
+                 </div>
+                  <div class="carousel-item">
+                    <img src="https://cdn.shopify.com/s/files/1/1611/4145/products/IsoWheyZero_Black_2270g_Chocolate_8l_fityegos_x500_crop_center_9e96850d-0231-438a-9d1f-b632040c473a.png?v=1646485857" class="" alt="...">
+                    <div class="slider-text">
+                        <h3>ISO WHEY ZERO</h3>
+                        <a href="http://127.0.0.1:5500/products/products2cover.html" class="btn btn-dark" target="_blank">shop now</a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://nolimit.mk/wp-content/uploads/2018/02/ISO100Hydro_2200g_GourmetVanilla_shadow03_600x600.png" class="" alt="...">
+                    <div class="slider-text">
+                        <h3>ISO 100</h3>
+                        <h3>HYDROLYZED</h3>
+                        <a href="http://127.0.0.1:5500/products/products3cover.html" class="btn btn-dark" target="_blank">shop now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="back container-fluid">
+        <div class="container newProducts">
+                <div class="row pb-3">
+                    <div class="col-md-12">
+                        <div class="mega-sale pb-3"></div>
+                        <div class="newProductsCards">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="newProduct">
+                                        <div class="img1-1">
+                                            <div class="logoSale">
+                                                <img src="./img/30-fococlipping-standard.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="btnNewProduct">
+                                            <div class="p1">
+                                                <p>SUPER MASS</p>
+                                            </div>
+                                            <a type="button" href="http://127.0.0.1:5500/products/products1.html"  target="_blank">Bay now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="newProduct">
+                                        <div class="img2-1">
+                                            <div class="logoSale">
+                                                <img src="./img/20-fococlipping-standard.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="btnNewProduct">
+                                            <div class="p2">
+                                                <p>LIGHT DIGEST</p>
+                                            </div>
+                                            <a type="button" href="http://127.0.0.1:5500/products/products2.html" target="_blank">Bay now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="newProduct">
+                                        <div class="img3-1">
+                                            <div class="logoSale">
+                                                <img src="./img/40-fococlipping-standard.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="btnNewProduct">
+                                            <div class="p2">
+                                                <p>AMINO ENERGY</p>
+                                            </div>
+                                            <a type="button" href="http://127.0.0.1:5500/products/products3.html" target="_blank">Bay now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="sliderPromotion">
+        <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://www.optimumnutrition.com/medias/V1-1023-X-488-722987-Glanbia-Optimum-Nutrition-Starter-Kit.png?context=bWFzdGVyfHJvb3R8NTY1OTU1MXxpbWFnZS9wbmd8aDcxL2gzNC8xMDg0OTEwOTMxMTUxOC5wbmd8ODc2NTJjOGE5YzA5YWZjNGFmNjEyNjIxMTViN2YzOTFjYTZlY2ZiYjg4ZmRmYjEyMzExZWFjYzgyZTgxZjVmNg" class="d-block w-100 imgSlider" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.dso.pl/images/Galvanize/Galvanize-Nutrition.jpg" class="d-block w-100 imgSlider" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://cdn.webshopapp.com/shops/87334/files/337090057/qnt-muscle-mass-3000-banner-real-nutrition-shop.png" class="d-block w-100 imgSlider" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+       
+    <div class="back container-fluid">
+        <div class="container newProducts">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="text-center best">Best Products</h1>
+                        <div class="newProductsCards">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="newProduct">
+                                        <div class="img1">
+                                           
+                                        </div>
+                                        <div class="btnNewProduct">
+                                            <div class="p1">
+                                                <p>ISO WHEY 100</p>
+                                            </div>
+                                            <a type="button" href="http://127.0.0.1:5500/products/products1Best.html" target="_blank">Bay now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="newProduct">
+                                        <div class="img2">
+                                           <!-- <div class="logoNew"></div>-->
+                                        </div>
+                                        <div class="btnNewProduct">
+                                            <div class="p2">
+                                                <p>SERIOUS MASS</p>
+                                            </div>
+                                            <a type="button" href="http://127.0.0.1:5500/products/products2Best.html" target="_blank">Bay now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="newProduct">
+                                        <div class="img3">
+                                            <div class="logoNew"></div>
+                                        </div>
+                                        <div class="btnNewProduct">
+                                            <div class="p3">
+                                                <p>BCAA ZERO</p>
+                                            </div>
+                                            <a type="button" href="http://127.0.0.1:5500/products/products3Best.html" target="_blank">Bay now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="brends pt-5 pb-5" id="bredndsID">
+            <ul>
+                <button type="button" class="leftBtn" href="#" id="leftBTn" onclick="leftBtn()"><span>></span></button>
+                <li>
+                    <img src="https://logodownload.org/wp-content/uploads/2021/04/optimum-nutrition-logo-1.png" alt="">
+                </li>
+                <li>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS83pCvpjcLqpydLf_xZ6qjzAR4P1rHq6I86nDg7Ql&s" alt="">
+                </li>
+                <li>
+                    <img src="https://hardcoreshop.mk/wp-content/uploads/2021/12/biotechusa.png" alt="">
+                </li>
+                <li>
+                    <img src="https://kyowaquality.com/storage/app/uploads/public/584/1f3/207/5841f3207d2e1576093617.png" alt="">
+                </li>
+                <li>
+                    <img src="https://choice.wetestyoutrust.com/sites/default/files/styles/medium/public/2020-08/dymatize_logo_Informed%20Sport.png?itok=_so8555A" alt="">
+                </li>
+                <li>
+                    <img src="https://www.prolifedistribution.co.uk/images/brands/thumbnails_product/1580723854-43450800.png" alt="">
+                </li>
+                <li>
+                    <img src="https://samuraishadow.com/wp-content/uploads/2020/03/weblogo-01.png" alt="">
+                </li>
+                <li>
+                    <img src="https://seeklogo.com/images/A/animal-logo-9349A35365-seeklogo.com.png" alt="">
+                </li>
+                <li>
+                    <img src="https://seeklogo.com/images/A/amix-logo-345B7DD5E3-seeklogo.com.png" alt="">
+                </li>
+                <li>
+                    <img src="data:image/png;base64,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" alt="">
+                </li>
+            <button type="button" class="rightBtn " href="#" id="rigntBtn" onclick="rightBtn()"><span>></span></button>
+
+            </ul>
+        </div>
+    </div>
+    <div class="container-fluid quality">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="bacgroun-purple best-quality">
+                    <h2>proven quality</h2>
+                    <i class="fa fa-star mt-3 mb-3"></i>
+                    <p>We offer high quality products for competitive, pricesdirect importers from abroad.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="bacgroun-white">
+                    <h2>free delivery</h2>
+                    <i class="fa fa-truck mt-3 mb-3"></i>
+                    <p class="fw-semibold">Free delivery on your first order. <br>
+                        Free delivery on orders of $50 or more.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="bacgroun-white">
+                    <h2>gifts</h2>
+                    <i class="fa fa-gift mt-3 mb-3"></i>
+                    <p class="fw-semibold">For every order higher than $100 you will receive the gift.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="bacgroun-purple">
+                    <h2>favorable pricesy</h2>
+                    <i class="fa fa-money mt-3 mb-3"></i>
+                    <p >The most favorable prices in the entire market.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container education pt-5 pb-5">
+        <h1 class="pt-5 pb-4">EDUCATION AND RESOURCES</h1>
+        <div class="row pb-5">
+            <div class="col-md-4">
+                <div class="protein">
+                    <div class="bacgroun-purple-transparent div">
+                        <h2><a href="http://127.0.0.1:5500/education/education.html" target="_blank">what is protein</a></h2>
+                        <i class="fa fa-heart mt-3 mb-3"></i>
+                        <p>Protein is an important part of a healthy diet, <a href="http://127.0.0.1:5500/education/education.html" target="_blank">read more</a> for protein...</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-md-4">
+                <div class="pancakes">
+                    <div class="bacgroun-purple-transparent div">
+                        <h2><a href="http://127.0.0.1:5500/education/pancakes.html" target="_blank">protein pancakes</a></h2>
+                        <i class="fa fa-cutlery mt-3 mb-3"></i>
+                        <p>Up your protein with these pancakes made with eggs, oats, milk and protein powder.<br> A great breakfast after a workout, enjoy with nut butter or fruit...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cardio">
+                    <div class="bacgroun-purple-transparent div">
+                    <h2><a href="http://127.0.0.1:5500/education/cardio.html" target="_blank">cardio training</a></h2>
+                    <i class="fa fa-heartbeat mt-3 mb-3"></i>
+                    <p>Cardio helps lower your blood pressure by reducing the levels of bad cholesterol and raising levels of good cholesterol...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid bacFooter">
+            <div class="row footerFirstRow">
+                <div class="col-md-4">
+                    <div class="footerText ">
+                        
+                        <img src="/img/Logo traspraent.png" alt="">
+                       <a href="./index.html"><p>
+                            Best place to shop your supplement
+                        </p></a>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                    <div class="col-md-4">
+                        <div class="footerAboutUs">
+                            <ul>
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="./shop/shop.html">Shop</a></li>
+                                <li><a href="./About us/aboutUs.html">Abot US</a></li>
+                                <li><img src="/img/visa master.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footerContact">
+                            <h4>Contact</h4>
+                            <ul>
+                                <li><a href="">gigashop@gmail.com</a></li>
+                                <li><a href="">gigashop_hr@gmail.com</a></li>
+                            </ul>
+                            <h4></h4>
+                            <ul>
+                                <li><a href="">+8976322322</a></li>
+                                <li><a href="">+8979123122</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footerLocation">
+                            <h4>Location</h4>
+                            <ul>
+                                <li><a href="https://www.google.com/maps?ll=41.032854,21.335288&z=12&t=m&hl=en&gl=MK&mapclient=embed" target="_blank" >Bitola</a></li>
+                                <li><a href="https://www.google.com/maps?ll=41.99909,21.42489&z=10&t=m&hl=en&gl=MK&mapclient=embed&q=Skopje" target="_blank" >Skopje</a></li>
+                                <li><a href="https://www.google.com/maps/place/Ohrid/@41.113995,20.791969,13z/data=!4m5!3m4!1s0x1350db6587ea6657:0xc46cfc65390bc9d3!8m2!3d41.1230977!4d20.8016481?hl=en" target="_blank" >Ohrid</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footerMedia">
+                            <p>Follow us</p>
+                            <ul class="mediaNav">
+                                <li><a href="https://www.facebook.com" target="_blank" ><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram " aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.google.com/" target="_blank"><i class="fa fa-google " aria-hidden="true"></i></a></li>
+                           </ul>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+            </div>
+            <div class="borderCopi">
+                <p>Site design / logo © 2022 Stack Exchange Inc; user contributions licensed under CC BY-SA. rev 2022.9.23.17768</p>
+            </div>
+        </div>
+    </footer>
+   
+
+    
+
+
+
+    <script src="script.js"></script>
+    <script src="srcipHome.js"></script>
+    <script src="/orders/oreders.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>

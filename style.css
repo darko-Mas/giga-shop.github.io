@@ -1,0 +1,979 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    width: 100%;
+
+}
+
+.homePage{
+    padding: 0%!important;
+    margin: 0px!important;
+}
+
+.nav-link {
+    color: lightgrey!important;
+    
+    margin-left: 0px!important;
+    margin-right: 0px!important;
+
+}
+
+/*.nav-link::before {
+    height: 1px;
+    width: 70px;
+    content: '';
+    background-color: white;
+    display: block;
+    position: relative;
+    top: 30px;
+
+}*/
+
+.nav-link:hover {
+    color:rgb(29, 0, 29)!important;
+    background-color: rgb(236, 236, 236);
+    border-radius: 3px;
+}
+
+
+.firstPage{ 
+    /*druga pozadina https://generationiron.com/wp-content/uploads/2021/03/1-1-1-1.jpg*/
+    margin-top: -100px;
+    background-image: url('http://static1.squarespace.com/static/5f3b1c9ede98102e6ec3b900/t/60462f8a3d6641502146f8bb/1615212430490/gym+supps+background.jpg?format=1500w');
+    height: 120vh;
+    width: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5px;
+    transition: 00.3s;
+}
+
+.logoSection{
+    margin-top: 10px;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+.logoSection img{
+    margin-top: 20px;
+    height: 500px;
+    transform: scale(0.7);
+}
+.logoSection h2{
+   margin-top: -50px;
+   margin-left: 170px;
+   
+   background: #030808;
+    background: linear-gradient(to top right, #505050 0%, #CFC3C8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+  
+}
+
+.imgSection{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.slider-text{
+    display: inline-block;
+}
+
+.imgSection img{
+    height: 400px;
+    width: 400px;
+}
+.beforNavbar{
+    position: relative;
+    z-index: 3333;
+    height: 30px;
+    border-bottom: 1px solid lightgray;
+}
+
+.beforeMessage{
+    font-size: 14px;
+    padding: 0px 5px;
+    margin: 0;
+    font-weight: 300;
+    color: rgb(155, 155, 155);
+}
+
+.mediaNav{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    margin-left: 20px;
+    margin-top: 0px;
+    padding: 0;
+    float: right;
+}
+
+.mediaNav i{
+    
+    font-size: 14px;
+    padding: 0px 5px;
+    margin: 0;
+    font-weight: 300;
+    color: rgb(155, 155, 155);
+}
+.navBar {
+    position: fixed;
+    z-index: 3333;
+    margin: 0px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    height: 70px;
+    transition: 0.3s;
+}
+
+.brand{
+    margin: 00px;
+}
+.brand img{
+    height: 80px;
+    width: 220px;
+}
+
+
+.menuBtn{
+    display: none;
+}
+
+.nav-list ul{
+    justify-content: end;
+    padding: 10px;
+}
+
+.nav-list ul li a{
+    color: lightgrey;
+}
+
+/*ova e dobro da se klaj ako kopceto e aktivno*/
+.forBefore .before {
+    border-bottom: 1px solid beige;
+    transition: 0.9s;
+}
+.forBefore .before:hover {
+    border-bottom: 1px solid rgba(104, 0, 81, 0);
+    transition: 0.4s;
+}
+
+.iconsNav{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    margin-left: 20px;
+    position: absolute;
+    right: 0;
+    margin-top: 10px;
+}
+
+
+
+.iconsNav i{
+    font-size: 18px;
+    padding: 0px 5px;
+    font-weight: 300;
+    color: rgb(155, 155, 155);
+}
+
+
+
+/*///////////////////////////////////     menageOrdes                  /////////////////////////////////////////////////////////*/
+
+#menageOrdes{
+    display: block;
+}
+
+
+.secondSection{
+    
+    height: 120vh;
+    color: rgba(15, 15, 15, 0.904);
+}
+
+/*new products section */
+/*.back{
+    background-image: linear-gradient(  #b9b9b981 0%, #ffffffaf 30%);
+
+}*/
+
+.back{
+    background-color: rgba(231, 231, 231, 0.397);
+    padding: 50px 0;
+}
+
+.newProducts{
+    padding: 50px 0;
+    height: 100%;
+    margin: 0px;
+}
+
+.newProducts h1{
+    margin: 0 0 20px 0;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #311031;
+
+   /* color: rgba(41, 6, 46, 0.47);
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 20px #4a0b4d83;*/
+}
+
+.mega-sale{
+    background-image: url('https://i.pinimg.com/originals/c1/8d/a8/c18da8cc82e3ba4cfe9cd998ca783847.jpg');
+    height: 120px;
+    width: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0 auto 30px auto;
+    border-radius: 5px;
+
+}
+
+
+.newProduct{
+        margin-top: 10px;
+        /*background-color: rgb(21, 20, 44); 
+        background-color: #4158D0;
+        background-image: linear-gradient(-43deg,  #1d1c1d93 0%,  #0f1d0fb0 46%, #7a7978af 100%);
+       
+        background-image: linear-gradient(90deg,  #311031 0%,  #7a7978 100%);*/ 
+        background-color: rgb(218, 218, 218);
+
+        height: 65vh;
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+        /*padding: 20px 10px;*/
+        border-radius: 5px ;
+        border: 0.2px solid rgba(128, 0, 128, 0.104);
+        box-shadow: 5px 5px 25px rgba(34, 30, 46, 0.512);
+        transition: 0.3s;
+        
+}
+.newProduct:hover{
+    margin-top: 0;
+    transition: 0.3s;
+}
+
+.newProduct:hover >div{
+    opacity: 1;
+    transition: 0.3s;
+}
+
+
+
+.newProduct .img1-1{
+    background-image: url('https://www.trufit.eu/media/adjconfigurable/550/copyright-www.trufit.eu-550-dymatize-super-mass-gainer-live.jpg');
+    height: 60%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:auto;
+    border-radius: 5px 5px 0px 0px;
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.newProduct .img1{
+    background-image: url('https://cdn.shopify.com/s/files/1/1914/3079/products/IsoWheyZero_chocolate_2270g_v2_500x500_crop_center.jpg?v=1647871276');
+    height: 60%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:auto;
+    border-radius: 5px 5px 0px 0px;
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.newProduct .img2-1{
+    background-image: url('https://cdn.shopify.com/s/files/1/2567/3972/products/light-digest-whey-protein-boite-creme-brulee-12-x-40-g_04a12e90-4a79-4412-99a1-03645a4e4a50_5000x.jpg?v=1631719795');
+    height: 60%;
+    width: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    margin:auto;
+    border-radius: 5px 5px 0px 0px;
+    transition: 0.3s;
+}
+
+.newProduct .img2{
+    background-image: url('https://m.media-amazon.com/images/S/aplus-media/vc/d5ce7485-0d78-40c2-a548-af1f822de757._CR0,0,300,300_PT0_SX300__.jpg');
+    height: 60%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    margin:auto;
+    border-radius: 5px 5px 0px 0px;
+    transition: 0.3s;
+}
+
+.newProduct .img3-1{
+    background-image: url('https://content.optimumnutrition.com/i/on/on-amino-energy_Image_03?layer0=$PDP_004$&fmt=auto&img404=no-product-image&v=1&locale=en-us,en-gb,*');
+    height: 60%;
+    width: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    margin:auto;
+    border-radius: 5px 5px 0px 0px;
+    transition: 0.3s;
+}
+
+.newProduct .img3{
+    background-image: url('https://www.kgcshop.it/media/catalog/product/cache/c1d1cadbc15f151b649ad6846b429bf0/b/i/biotech-bcaa-zero-180g-3_1_1.jpg');
+    height: 60%;
+    width: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    margin:auto;
+    border-radius: 5px 5px 0px 0px;
+    transition: 0.3s;
+}
+
+.newProduct .logoNew{
+    background-image: url("https://www.freepnglogos.com/uploads/stamp-png/new-stamp-vector-png-transparent-svg-onlygfxm-19.png");
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: -15px;
+    left: -20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logoSale
+{
+    margin: 0;
+    padding: 0;
+}
+ .logoSale img{
+    height: 70px;
+    width: 120px;
+    position: relative;
+    top: -15px;
+    left: -20px;
+    z-index: 8888px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    rotate: -20deg;
+}
+.btnNewProduct{
+    text-align: center;
+    margin: auto;
+}
+
+.newProduct p{
+    opacity: 0;
+    transition: 0.5s;
+}
+.newProduct:hover p{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.btnNewProduct p{
+    margin-top: 10%;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: left;
+    padding: 0 30px;
+    border: none;
+    border-radius:5px ;
+    color: rgb(44, 26, 46);
+}
+
+
+.btnNewProduct p::before{
+    background-color: rgb(75, 24, 75);
+    height: 1px;
+    width: 0px;
+    content: '';
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 45px;
+    left: -5px;
+}
+.newProduct:hover .p1 p::before{
+    width: 205px;
+    transition: 0.3s;
+}
+.newProduct:hover .p2 p::before{
+    width: 220px;
+    transition: 0.3s;
+}
+.newProduct:hover .p3 p::before{
+    width: 170px;
+    transition: 0.3s;
+}
+
+.btnNewProduct a{
+    width: 90%;
+    margin-top: 5%;
+    padding: 5px;
+    padding-bottom: 8px;
+    border: none;
+    border-radius:5px ;
+    background-color: rgba(21, 20, 44, 0.768); 
+    color: lightgray;
+    font-weight: 500;
+    border: 0.5px solid transparent;
+    text-decoration: none;
+}
+
+.btnNewProduct a::before{
+    background-color: rgb(224, 151, 224);
+    height: 1px;
+    width: 0;
+    content: '';
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 25px;
+    left: 80px;
+}
+.btnNewProduct a:hover{
+    background-color: rgb(21, 20, 44); 
+    color: lightgray;
+    transition: 0.3s;
+}
+.btnNewProduct a:hover::before{
+    height: 1px;
+    width: 100px;
+    transition: 0.3s;
+}
+
+
+/*new products section end*/
+
+
+
+/*Brends*/
+.brends{
+    position: relative;
+    width: 100%;
+}
+.brends ul{
+    margin-bottom: 0;
+    padding-bottom: 15px;
+    width: 100%;
+}
+.brends li{
+    display: inline-block;
+    margin: 10px 3%;
+}
+.brends .leftBtn{
+    rotate: 180deg;
+    width: 60px;
+    height: 60px;
+    font-size: 36px;
+    position: relative;
+    z-index: 800px;
+    left: 55px;
+    top: 15px;
+    color: #5a0956e5;
+    background-color: #4159d007;
+    text-align: center;
+    border: none;
+    border-radius: 50% ;
+}
+.brends .leftBtn:hover{
+    background-color: #4159d02d;
+    box-shadow: 2px 2px 30px rgba(128, 128, 128, 0.236);
+}
+
+.brends .leftBtn span{
+    position: relative;
+    bottom: 5px;
+}
+.brends .rightBtn{
+    width: 60px;
+    vertical-align: middle;
+    height: 60px;
+    position: relative;
+    top: 3px;
+    z-index: 800px;
+    left: -45px;
+    color: #5a0956e5;
+    background-color: #4159d007;
+    padding: 5px 10px 15px 10px;
+    text-align: center;
+    border: none;
+    border-radius: 50%;
+    font-size: 36px;
+}
+
+.brends .rightBtn:hover{
+    background-color: #4159d02d;
+    box-shadow: 2px 2px 30px rgba(128, 128, 128, 0.236);
+}
+
+.brends .rightBtn span{
+    position: relative;
+    top: -7px;
+}
+
+.brends img{
+    height: 100px;
+    width: 200px;
+}
+/*Brends end*/
+
+
+.imgSlider{
+    height: 90vh;
+}
+
+/*quality*/
+.quality{
+    
+    height: 100%;
+    text-align: center;
+}
+.quality .col-md-6{
+    margin: 0%!important;
+    padding: 0%!important;
+
+}
+.quality .col-md-6 > div{
+    padding: 7%;
+}
+.quality h2{
+text-transform: uppercase;
+}
+.quality i{
+    font-size: 28px;
+}
+
+.bacgroun-purple{
+    margin: 0%;
+    height: 50vh;
+    width: 100%;
+    background-color: #311031;
+    color: lightgray;
+}
+.bacgroun-white{
+    margin: 0%;
+    height: 50vh;
+    width: 100%;
+    background-color: lightgray;
+    color: #311031;
+}
+/*quality end*/
+
+/*education*/
+.education{
+    height: 100%;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.education .col-md-4{
+    margin-bottom: 30px;
+
+}
+
+.protein{
+    background-image: url('https://cdn-prod.medicalnewstoday.com/content/images/articles/263/263371/whey-protein-powder.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0%;
+    height: 50vh;
+    width: 100%;
+}
+
+.pancakes{
+    background-image: url('data:image/jpeg;base64,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');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0%;
+    height: 50vh;
+    width: 100%;
+    color: lightgray;
+}
+
+.cardio{
+    background-image: url('https://t4.ftcdn.net/jpg/00/91/28/99/360_F_91289989_EnIC6aAT99bJb7z8i044rBWezv5tWGkb.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0%;
+    height: 50vh;
+    width: 100%;
+}
+
+.protein  .bacgroun-purple-transparent,.pancakes  .bacgroun-purple-transparent, .cardio .bacgroun-purple-transparent{
+    margin: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: #31103181;
+    color: lightgray;
+}
+
+.education h1{
+    padding-bottom: 20px;
+    color: #311031;
+}
+
+.education h2 {
+    text-transform: uppercase;
+}
+
+.education .bacgroun-purple-transparent h2 a{
+    text-decoration: none;
+    color: lightgray;
+}
+
+.education .bacgroun-white h2 a{
+    text-decoration: none;
+    color: #311031;
+}
+
+.education .col-md-4 .div{
+    padding: 7%;
+}
+
+.div a{
+    color: lightgray;
+}
+/*education end*/
+
+
+/*footer*/
+footer{
+    height: 100%;
+}
+
+footer a{
+    color: rgba(173, 172, 252, 0.911);
+    transition: 0.3s;
+    padding: 5px;
+    padding-bottom:3px;
+    font-weight: 300;
+}
+
+footer a:hover{
+    color: aliceblue;
+    border-bottom:0.5px solid rgba(187, 136, 228, 0.5);
+    transition: 0.3s;
+}
+
+footer ul{
+    padding: 0;
+}
+
+footer ul li{
+    list-style: none;
+    
+}
+
+footer ul li a{
+    text-decoration: none;
+}
+
+.footerFirstRow{
+    margin: auto;
+}
+
+.footerText img{
+    height: 120px;
+    padding-left: 10%;
+    text-decoration: none;
+    border: none;
+}
+.footerText p{
+    padding-left: 10%;
+}
+.footerText a{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.footerText{
+    padding-right: 10px;
+    color: rgba(173, 172, 252, 0.911);
+    border-right:0.5px solid rgba(186, 152, 214, 0) ;
+    transition: 0.3s;
+    
+}
+.footerText:hover{
+    color: aliceblue;
+    border-bottom:0.5px solid rgba(187, 136, 228, 0.5);
+    border-right:0.5px solid rgba(187, 136, 228, 0.5) ;
+    transition: 0.3s;
+    padding-bottom: 20px;
+}
+.bacFooter {
+    background-color: rgb(26, 4, 54);
+    height: 100%;
+    padding-top: 50px;
+    color: rgba(173, 172, 252, 0.911);
+}
+
+.footerFirstRow{
+    padding: 40px;
+    margin-bottom: 0%;
+}
+
+.footerAboutUs{
+    text-align: left;
+}
+.footerAboutUs ul{
+    margin-top: 10%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 0;
+}
+.footerAboutUs img{
+    position: relative;
+    z-index: -111;
+    width: 80%;
+    top: -50px;
+}
+.footerContact {
+    margin-bottom: 50px;
+}
+
+.footerContact ul{
+    padding-left:50px;
+}
+
+.footerContact h4{
+    text-align: center;
+}
+
+.footerLocation{
+    text-align: center;
+}
+
+
+.footerMedia{
+    text-align: center;
+}
+
+.footerFirstRow .footerMedia p{
+    color: rgba(173, 172, 252, 0.911);
+    display: block;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.footerFirstRow .mediaNav {
+    float: none;
+    margin: 0 40%;
+    margin-left: 39%;
+}
+
+.footerFirstRow .mediaNav a{
+    padding: 0 0 3px 0;
+}
+
+
+.footerFirstRow .mediaNav i{
+    color: rgba(173, 172, 252, 0.911);
+    padding: 5px;
+}
+.footerFirstRow .mediaNav i:hover{
+    color: aliceblue;
+}
+
+.borderCopi{
+    border-top:1px solid white ;
+    padding: 0px;
+    height: 10vh;
+    margin: 0 100px;
+    vertical-align: bottom;
+    text-align: center;
+}
+
+.borderCopi p{
+    padding-top: 20px ;
+}
+
+/* Footer end*/
+
+
+/* Log IN form*/
+.logInForm{
+    background-color: rgba(0, 0, 0, 0.658);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 4444;
+    display: none;
+    text-align: center;
+}
+
+#registerin , #login{
+    text-align: center;
+    padding: 50px;
+    border: 1px solid rgba(134, 134, 134, 0.411);
+    height: 80%;
+    width: 40%;
+    left: 30%;
+    top: 10%;
+    position: fixed;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+#registerin{
+    display: none;
+}
+
+#addNewMember{
+    text-align: center;
+    padding: 50px;
+    border: 1px solid black;
+    height: 100%;
+    width: 30%;
+    margin: 10% auto;
+    background-color: lightgray;
+}
+
+/* Log IN form end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    .beforNavbar{
+        display: none;
+    }
+    .navBar{
+        position: fixed!important;
+        z-index: 3333;
+        top: 0;
+        background-color: rgba(15, 15, 15, 0.994)!important;
+        width: 100%;
+       /* za na onclick height: 70%;*/ 
+    }
+    .navBar nav{
+        display: none;
+    }
+    .navBar nav .nav-list .nav{
+        display: block;
+        text-align: center;
+    }
+    .iconsNav{
+        position: relative;
+        margin-right: 40%;
+    }
+    
+    .menuBtn{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+    .menuBtn button{
+        height: 50px;
+        width: 50px;
+        font-size: 30px;
+        background-color: transparent;
+        border: none;
+        color: lightgray;
+    }
+
+    .logoSection{
+        display: none;
+    }
+
+    .firstPage{ 
+        width: auto;
+        background-image: url('https://bestprofilepictures.com/wp-content/uploads/2022/07/Aesthetic-Bodybuilder-Images-For-Wallpaper.jpg');
+        transition: 0.3s;
+        height: 100vh;
+        margin-top: 10vh;
+        background-position: bottom!important;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .imgSection{
+        top: 30%;
+        left: 15%;
+    }
+    .imgSection img{
+        
+    height: 300px;
+    width: 300px;
+    }
+    .slider-text{
+        text-align: center;
+        margin: auto;
+        margin-left: 23%;
+        color: lightgray;
+    }
+
+    .sliderPromotion{
+        display: none;
+    }
+ 
+    .brends{
+        display: none;
+    }
+
+    .best{
+        font-size: 26px!important;
+    }
+
+    .bacFooter{
+        height: 150%;
+        padding-bottom:140px ;
+    }
+    .footerText{
+        text-align: center;
+    }
+    .footerAboutUs{
+        text-align: center;
+    }
+
+}
